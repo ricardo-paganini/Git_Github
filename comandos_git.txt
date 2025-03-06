@@ -42,7 +42,6 @@ $ ssh-add ~/.ssh/nome_da_chave_ssh_criada
 $ cat ~/.ssh/nome_da_chave_ssh_criada.pub
 Copiar o conteúdo do arquivo e colar em:
 Settings > SSH and GPG keys > New SSH Key
-
 $ git remote set-url origin git@github.com:<USUARIO>/<REPOSITORIO>.git
 
 
