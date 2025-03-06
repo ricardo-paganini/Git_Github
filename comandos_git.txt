@@ -33,6 +33,7 @@ $ git merge nome_da_branch -> traz as alterações de uma branch para a branch p
 $ git branch -d nome_da_branch -> apaga a branch
 $ git remote add origin url_repositorio_no_github.git -> adiciona o repositório local ao repositório remoto.
 $ git push origin main -> faz upload do seu repositório local para o repositório remoto.
+$ git clone URL_a_ser_clonada -> Fork ou Clone de um repositório para o seu próprio repositório.
 
 Autenticação via SSH 
 Gerar um certificado SSH
@@ -43,6 +44,22 @@ $ cat ~/.ssh/nome_da_chave_ssh_criada.pub
 Copiar o conteúdo do arquivo e colar em:
 Settings > SSH and GPG keys > New SSH Key
 $ git remote set-url origin git@github.com:<USUARIO>/<REPOSITORIO>.git
+
+Sequência de trabalho para uma contribuição
+1. Fork do projeto para o seu próprio Github
+2. git clone <endereço do projeto fork>
+3. git checkout -b nova_branch
+3. git add .
+4. git status
+5. git commit -m "nova mensagem"
+6. git push origin <nova_branch>
+7. abrir pull request no Github na branch fork para a main do projeto original 
+8. excluir <nova_branch> origin
+9. git checkout main
+10. git branch -d <nova_branch>
+
+Contruindo um fluxo de trabalho ideal com o GitFlow
+
 
 
 
