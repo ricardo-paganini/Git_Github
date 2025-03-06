@@ -34,6 +34,11 @@ $ git branch -d nome_da_branch -> apaga a branch
 $ git remote add origin url_repositorio_no_github.git -> adiciona o repositório local ao repositório remoto.
 $ git push origin main -> faz upload do seu repositório local para o repositório remoto.
 $ git clone URL_a_ser_clonada -> Fork ou Clone de um repositório para o seu próprio repositório.
+$ git fetch -> Traz todas as branches do repositório remoto para o repositório local.
+    $ git checkout <develop_branch> trazida pelo git fetch para começar a trabalhar.
+        $ git pull origin <develop>
+            $ git checkout -b <branch_padrões> -> esta branch é criada na estrutura para cada desenvolvedor começar a trabalhar e desenvolver o projeto.
+
 
 Autenticação via SSH 
 Gerar um certificado SSH
