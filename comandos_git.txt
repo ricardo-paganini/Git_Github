@@ -1,0 +1,51 @@
+1 - Instalação
+
+$ atp install git
+
+
+2 - Configurações iniciais
+
+$ git config --global user.name "nome_usuario"
+$ git config --global user.email seu_email@dominio.com
+$ git config --global user.editor nome_editor_preferencial
+$ git config --global init.defaultBranch nome_da_branch_principal
+$ git config --list
+
+
+3 - Inicializa uma pasta para o versionamento do Git
+
+$ git init . 
+
+
+4 - Comandos Git
+.
+$ git status -> exibe o status dos arquivos na pasta de versionamento.
+$ git add nome_do_arquivo -> adiciona arquivo que vá para o commit.
+$ git rm --cached nome_do_arquivo -> remove um arquivo do commit.
+$ git reset nome_do_arquivo -> também remove um arquivo do commit.
+$ git commit -m "mensagem" -> cria um checkpoint do arquivo.
+$ git log -> exibe um histórico dos commits executados na branch (main).
+$ git diff nome_do_arquivo -> exibe basicamente o que foi alterado no arquivo após o último commit.
+$ git checkout -b nome_da_branch -> cria uma nova branch deixando ela como principal e não mais a main.
+$ git branch -> mostra todas as branches do seu projeto. A branch atual é marcada com um asterisco.
+$ git checkout nome_da_branch -> navega entre as branches existentes no projeto.
+$ git merge nome_da_branch -> traz as alterações de uma branch para a branch principal, mesclando as alterações.
+$ git branch -d nome_da_branch -> apaga a branch
+$ git remote add origin url_repositorio_no_github.git -> adiciona o repositório local ao repositório remoto.
+$ git push origin main -> faz upload do seu repositório local para o repositório remoto.
+
+Autenticação via SSH 
+Gerar um certificado SSH
+$ ssh-keygen -t ed25519 -C "seu_email@exemplo.com"
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/nome_da_chave_ssh_criada
+$ cat ~/.ssh/nome_da_chave_ssh_criada.pub
+Copiar o conteúdo do arquivo e colar em:
+Settings > SSH and GPG keys > New SSH Key
+
+$ git remote set-url origin git@github.com:<USUARIO>/<REPOSITORIO>.git
+
+
+
+
+

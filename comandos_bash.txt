@@ -1,0 +1,7 @@
+Comandos bash:
+
+cat nome_arquivo => exibe o conteúdo do arquivo
+rm -rf nome_pasta => exclui uma pasta recursivamente
+touch nome_arquivo => cria um arquivo sem nenhum conteúdo 
+
+
