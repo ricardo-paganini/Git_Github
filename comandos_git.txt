@@ -63,7 +63,10 @@ Sequência de trabalho para uma contribuição
 9. git checkout main
 10. git branch -d <nova_branch>
 
-Contruindo um fluxo de trabalho ideal com o GitFlow
+Arquivo .gitignore -> nomes,extensões ou pastas que serão ignoradas para serem adicionadas pelo versionamento
+Arquivo .gitkeep -> nomes, extensões ou pastas que não serão ignoradas para serem adicionadas pelo versionamento
+
+OBS.: Por convenção, arquivos binários (que não podem ser ligos como texto) devem ser ignorados. Caso estes arquivos tenham que existir para o funcionamento do projeto, mencione onde adquirí-los no README.md
 
 
 
